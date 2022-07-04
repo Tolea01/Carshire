@@ -6,15 +6,16 @@
 }
 
 .header-contacts__row {
+    width: 1200px;
     display: flex;
     align-items: center;
-    width: 1200px;
 }
 
 .header-contacts__telephon,
 .header-contacts__message {
     color: #ffffff;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .header-contacts__telephon {
@@ -23,6 +24,19 @@
 
 .header-contacts__message {
     width: 190px;
+}
+
+.header-contacts__telephon:hover,
+.header-contacts__message:hover {
+    color: #ffa100;
+}
+
+.header-contacts__telephon:hover::before {
+    content: url('../SVG_icon/telephon-hover.svg');
+}
+
+.header-contacts__message:hover::before {
+    content: url('../SVG_icon/message-hover.svg');
 }
 
 .header-contacts__telephon::before {
@@ -42,10 +56,14 @@
     justify-content: end;
 }
 
-img.header-contacts__social-icon {
-    margin-right: 12px;
+a.header-contacts__links {
+    margin-right: 13px;
 }
 
-img.header-contacts__social-icon:last-child {
+a.header-contacts__links:last-child {
     margin-right: 0px;
+}
+
+img.linkedin {
+    background: url('../SVG_icon/Linkedin-hover.svg');
 }
