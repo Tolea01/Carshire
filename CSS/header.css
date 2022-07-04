@@ -1,28 +1,51 @@
 .container-fluid {
     height: 50px;
+    display: flex;
+    justify-content: center;
     background-color: #292929;
 }
 
 .header-contacts__row {
     display: flex;
     align-items: center;
-    height: 100%;
+    width: 1200px;
 }
 
-.telephon-number,
-.message {
+.header-contacts__telephon,
+.header-contacts__message {
     color: #ffffff;
     font-size: 16px;
 }
 
-.telephon-number::before {
+.header-contacts__telephon {
+    width: 140px;
+}
+
+.header-contacts__message {
+    width: 190px;
+}
+
+.header-contacts__telephon::before {
     content: url('../SVG_icon/call.svg');
     display: inline-block;
     margin-right: 10px;
 }
 
-.message::before {
+.header-contacts__message::before {
     content: url('../SVG_icon/message.svg');
     display: inline-block;
     margin-right: 15px;
+}
+
+.header-contacts__icon {
+    display: flex;
+    justify-content: end;
+}
+
+img.header-contacts__social-icon {
+    margin-right: 12px;
+}
+
+img.header-contacts__social-icon:last-child {
+    margin-right: 0px;
 }
