@@ -1,3 +1,7 @@
+body {
+    font-family: Roboto,sans-serif;
+}
+
 .container-fluid {
     height: 50px;
     display: flex;
@@ -13,8 +17,10 @@
 
 .header-contacts__telephon,
 .header-contacts__message {
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
 }
 
@@ -23,7 +29,7 @@
 }
 
 .header-contacts__message {
-    width: 190px;
+    width: 194px;
 }
 
 .header-contacts__telephon:hover,
@@ -151,14 +157,15 @@ li.nav-item:last-child {
 }
 
 a.nav-link {
-    color: #454545;
+    font-family: Roboto,sans-serif;
     font-weight: bold;
-    font-size: 15px;
-    transition: all .5s;
+    color: #454545;
+    font-size: 14px;
+    /* transition: all .5s; */
 }
 
 a.nav-link:hover {
     color: #ffa100;
     border-bottom: 1px solid #ffa100;
-    transition: all .5s;
+    /* transition: border 3s; */
 }
