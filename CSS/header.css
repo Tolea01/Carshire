@@ -32,15 +32,15 @@
 }
 
 .header-contacts__telephon:hover::before {
-    content: url('../SVG_icon/telephon-hover.svg');
+    content: url('/SVG_icon/telephon-hover.svg');
 }
 
 .header-contacts__message:hover::before {
-    content: url('../SVG_icon/message-hover.svg');
+    content: url('/SVG_icon/message-hover.svg');
 }
 
 .header-contacts__telephon::before {
-    content: url('../SVG_icon/call.svg');
+    content: url('/SVG_icon/call.svg');
     display: inline-block;
     margin-right: 10px;
 }
@@ -56,14 +56,64 @@
     justify-content: end;
 }
 
-a.header-contacts__links {
+.header-contacts__icon a {
+    width: 15px;
+    height: 15px;
     margin-right: 13px;
 }
 
-a.header-contacts__links:last-child {
-    margin-right: 0px;
+.linkedin {
+    background: url('/SVG_icon/Linkedin.svg');
 }
 
-img.linkedin {
-    background: url('../SVG_icon/Linkedin-hover.svg');
+.google {
+    background: url('/SVG_icon/Google.svg');
+}
+
+.pinterest {
+    background: url('/SVG_icon/Pinterest.svg');
+}
+
+.facebook {
+    background: url('/SVG_icon/Facebook.svg');
+}
+
+.instagram {
+    background: url('/SVG_icon/Instagram.svg');
+}
+
+.twitter {
+    background: url('/SVG_icon/Twitter.svg');
+}
+
+.skype {
+    background: url('/SVG_icon/Skype.svg');
+}
+
+.linkedin:hover {
+    background: url('/SVG_icon/Linkedin-hover.svg');
+}
+
+.google:hover {
+    background: url('/SVG_icon/Google-hover.svg');
+}
+
+.pinterest:hover {
+    background: url('/SVG_icon/Pinterest-hover.svg');
+}
+
+.facebook:hover {
+    background: url('/SVG_icon/Facebook-hover.svg');
+}
+
+.instagram:hover {
+    background: url('/SVG_icon/Instagram-hover.svg');
+}
+
+.twitter:hover {
+    background: url('/SVG_icon/Twitter-hover.svg');
+}
+
+.skype:hover {
+    background: url('/SVG_icon/Skype-hover.svg');
 }

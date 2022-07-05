@@ -1,3 +1,11 @@
+@media(max-width: 450px) {
+    .header-contacts__icon {
+        position: absolute;
+        top: 17px;
+        left: 8px;
+    }
+}
+
 @media(max-width: 400px) {
     .header-contacts__telephon,
     .header-contacts__message {
