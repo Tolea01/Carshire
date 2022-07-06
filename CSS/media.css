@@ -12,3 +12,34 @@
         font-size: 3.5vw;
     }
 }
+
+@media(max-width: 991px) {
+    .header-menu__nav {
+        padding: 0 4px;
+        height: 41.72px;
+    }
+
+    .header-menu__links {
+        margin-top: 20px;
+    }
+
+    .nav-item:first-child {
+        border-top: 1px solid black;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-link {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+
+    a.nav-link:hover:after {
+        visibility: hidden;
+    }
+}
