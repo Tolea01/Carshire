@@ -2,17 +2,13 @@ body {
     font-family: Roboto,sans-serif;
 }
 
-.container-fluid {
+.header-contacts__container {
     height: 50px;
-    display: flex;
-    justify-content: center;
     background-color: #292929;
 }
 
 .header-contacts__row {
     width: 1200px;
-    display: flex;
-    align-items: center;
 }
 
 .header-contacts__telephon,
@@ -55,11 +51,6 @@ body {
     content: url('../SVG_icon/message.svg');
     display: inline-block;
     margin-right: 15px;
-}
-
-.header-contacts__icon {
-    display: flex;
-    justify-content: end;
 }
 
 .header-contacts__icon a {
@@ -144,8 +135,6 @@ img.header-menu__logo {
 
 .header-menu__links{
     width: 100%;
-    display: flex;
-    justify-content: end;
 }
 
 li.nav-item {
