@@ -7,6 +7,51 @@
 }
 
 @media(max-width: 991px) {
+/*********** BURGER-MENU ***********/
+    .burger {
+        width: 27px;
+        height: 20px;
+        border: none;
+        background-color: transparent;
+        position: relative;
+        right: 12px;
+    }
+
+    .burger-line {
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        background-color: #292929;
+        transition: all .3s linear;
+    }
+
+    .first-line {
+        top: 0;
+    }
+
+    .second-line, .third-line {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .fourth-line {
+        bottom: 0;
+    }
+
+    .burger-active .first-line, .burger-active .fourth-line {
+        opacity: 0;
+    }
+
+    .burger-active .second-line {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .burger-active .third-line {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+/************************************/
+
     .header-menu__nav {
         padding: 0 4px;
         height: 41.72px;
