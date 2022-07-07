@@ -3,6 +3,7 @@ body {
 }
 
 .header-contacts__container {
+    width: 100%;
     height: 50px;
     background-color: #292929;
 }
@@ -53,10 +54,14 @@ body {
     margin-right: 15px;
 }
 
+.header-contacts__icon {
+    padding: 0;
+}
+
 .header-contacts__icon a {
     width: 15px;
     height: 15px;
-    margin-right: 13px;
+    margin-right: 12px;
 }
 
 .linkedin {
@@ -125,7 +130,7 @@ body {
     width: 100%;
     height: 81px;
     background-color: #fff;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 img.header-menu__logo {
