@@ -15,6 +15,7 @@
         background-color: transparent;
         position: relative;
         right: 12px;
+        visibility: visible;
     }
 
     .burger-line {
