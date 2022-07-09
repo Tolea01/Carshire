@@ -131,7 +131,6 @@ body {
     width: 100%;
     height: 81px;
     background-color: #fff;
-    border: 2px solid black;
 }
 
 img.header-menu__logo {
@@ -183,4 +182,18 @@ a.nav-link:hover:after {
 
 .burger {
     visibility: hidden;
+}
+
+.header-img {
+    width: 1903px;
+    height: 578px;
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 73%;
+    background-color: black;
+    opacity: .7;
+    position: absolute;
 }
