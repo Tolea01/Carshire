@@ -54,8 +54,12 @@
 /************************************/
 
     .header-menu__nav {
-        padding: 0 4px;
+        padding: 0 0px;
         height: 41.72px;
+    }
+
+    .header-menu__logo {
+        margin-left: 10px;
     }
 
     .header-menu__links {
@@ -80,5 +84,10 @@
 
     a.nav-link:hover:after {
         visibility: hidden;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        z-index: 2;
     }
 }
