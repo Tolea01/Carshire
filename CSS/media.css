@@ -7,7 +7,8 @@
 }
 
 @media(max-width: 991px) {
-/*********** BURGER-MENU ***********/
+
+    /*********** BURGER-MENU ***********/
     .burger {
         width: 27px;
         height: 20px;
@@ -31,7 +32,8 @@
         top: 0;
     }
 
-    .second-line, .third-line {
+    .second-line,
+    .third-line {
         top: 50%;
         transform: translateY(-50%);
     }
@@ -40,7 +42,8 @@
         bottom: 0;
     }
 
-    .burger-active .first-line, .burger-active .fourth-line {
+    .burger-active .first-line,
+    .burger-active .fourth-line {
         opacity: 0;
     }
 
@@ -51,7 +54,12 @@
     .burger-active .third-line {
         transform: translateY(-50%) rotate(-45deg);
     }
-/************************************/
+
+    /************************************/
+
+    .navbar {
+        position: static;
+    }
 
     .header-menu__nav {
         padding: 0 0px;
