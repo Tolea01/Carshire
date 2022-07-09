@@ -187,12 +187,15 @@ a.nav-link:hover:after {
 .header-img {
     width: 1903px;
     height: 578px;
+}
+
+.header-img__background {
     position: relative;
 }
 
 .overlay {
     width: 100%;
-    height: 73%;
+    height: 100%;
     background-color: black;
     opacity: .6;
     position: absolute;
