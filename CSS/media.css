@@ -99,3 +99,9 @@
         z-index: 2;
     }
 }
+
+@media(max-width: 993px) {
+    .header-img__text-container {
+        left: 15px;
+    }
+}
