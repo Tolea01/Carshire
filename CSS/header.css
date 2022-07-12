@@ -1,6 +1,5 @@
 body {
     font-family: Roboto, sans-serif;
-    background-color: #292929;
 }
 
 .header-contacts__container {
@@ -214,8 +213,11 @@ a.nav-link:hover:after {
 }
 
 .header-img__text-container {
+    width: 600px;
     position: absolute;
-    top: 70px;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-80%);
     color: #fff;
 }
 

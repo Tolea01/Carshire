@@ -1,8 +1,12 @@
-@media(max-width: 400px) {
+@media(max-width: 1000px) {
+    .header-img__text-container {
+        width: 95%;
+        transform: translateX(0%);
+        left: 20px;
+    }
 
-    .header-contacts__telephon,
-    .header-contacts__message {
-        font-size: 3.5vw;
+    .header-img__text {
+        width: 97%;
     }
 }
 
@@ -100,8 +104,38 @@
     }
 }
 
-@media(max-width: 993px) {
-    .header-img__text-container {
-        left: 15px;
+@media(max-width: 480px) {
+    .header-img__title {
+        font-size: 5vw;
+        line-height: 35px;
+    }
+
+    .header-img__text {
+        font-size: 3.5vw;
+        text-align: left;
+    }
+
+    .header-img__link {
+        width: 150px;
+    }
+}
+
+@media(max-width: 400px) {
+
+    .header-contacts__telephon,
+    .header-contacts__message {
+        font-size: 3.5vw;
+    }
+
+    .header-img__title {
+        line-height: 30px;
+    }
+
+    .header-img__link {
+        width: 120px;
+    }
+
+    .header-img__link a {
+        font-size: 3.5vw;
     }
 }
