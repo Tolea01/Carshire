@@ -10,6 +10,16 @@
     }
 }
 
+@media(min-width: 769px) {
+    .header-img__link:hover {
+        background-color: #fff;
+    }
+
+    .header-img__link a:hover {
+        color: #454545;
+    }
+}
+
 @media(max-width: 991px) {
 
     /*********** BURGER-MENU ***********/

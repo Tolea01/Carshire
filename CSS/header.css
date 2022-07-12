@@ -215,7 +215,7 @@ a.nav-link:hover:after {
 .header-img__text-container {
     width: 600px;
     position: absolute;
-    top: 15%;
+    top: 13%;
     left: 50%;
     transform: translateX(-80%);
     color: #fff;
