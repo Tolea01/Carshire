@@ -1,5 +1,6 @@
 body {
     font-family: Roboto, sans-serif;
+    background-color: #292929;
 }
 
 .header-contacts__container {
@@ -250,4 +251,37 @@ a.nav-link:hover:after {
     text-decoration: none;
     line-height: 45px;
     color: #fff;
+}
+
+.header-select__container {
+    width: 982px;
+    height: 280px;
+    position: absolute;
+    padding: 55px 40px 75px 40px;
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    transform: translateY(-50%);
+}
+
+.select__title {
+    color: #ffa100;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.select-row1 {
+    height: 78px;
+}
+
+#suv {
+    background: url("/img/car-select-form/suv-grey.png") no-repeat top center;
+}
+
+.vehicle {
+    height: 68px;
+}
+
+.vehicle-text {
+    color: #bababa;
+    font-size: 14px;
 }
