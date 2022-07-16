@@ -277,11 +277,77 @@ a.nav-link:hover:after {
     background: url("/img/car-select-form/suv-grey.png") no-repeat top center;
 }
 
+#pickup {
+    background: url("/img/car-select-form/pickup-grey.png") no-repeat top center;
+}
+
+#coupe {
+    background: url("/img/car-select-form/coupe-grey.png") no-repeat top center;
+}
+
+#convertible {
+    background: url("/img/car-select-form/convertible-grey.png") no-repeat top center;
+}
+
 .vehicle {
     height: 68px;
+    margin-right: 40px;
 }
 
 .vehicle-text {
     color: #bababa;
     font-size: 14px;
+}
+
+.price-title {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #D7D7D7;
+    position: absolute;
+    top: 13%;
+    left: 80%;
+}
+
+#price-slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 6px;
+    width: 200px;
+    background-color: #D1D1D1;
+    outline: none;
+}
+
+#price-slider::-moz-range-thumb {
+    -moz-appearance: none;
+}
+
+#price-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 1px solid #ffa100;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+#select-value {
+    font-size: 16px;
+    color: #ffa100;
+    /* position: absolute; */
+    /* position: fixed; */
+    position: relative;
+    /* top: -40px; */
+    /* width: 100px;
+    height: 100px; */
+    top: 25%;
+    left: -80%;
+
+}
+
+.price-filter {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    /* position: relative; */
 }
