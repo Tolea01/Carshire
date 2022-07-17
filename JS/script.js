@@ -1,5 +1,5 @@
 const burget_menu = document.querySelector('.burger');
-burget_menu.addEventListener('click', () =>{
+burget_menu.addEventListener('click', () => {
     burget_menu.classList.toggle('burger-active')
 })
 
@@ -17,8 +17,11 @@ window.onscroll = () => {
 }
 
 
-let priceSlider = document.getElementById("price-slider");
-let selectValue = document.getElementById("select-value");
-priceSlider.oninput = function () {
-    selectValue.style.left = this.value + "%";
+let range = document.querySelector("#price-slider");
+let rangeNum = document.querySelector(".slider-value");
+let progressBar = document.querySelector(".progress-bar");
+range.oninput = function () {
+    rangeNum.style.left = this.value / 5.53 + "px";
+    progressBar.style.width = this.value / 5.53 + "px";
+    rangeNum.innerHTML = this.value + "$";
 }

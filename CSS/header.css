@@ -299,13 +299,20 @@ a.nav-link:hover:after {
     font-size: 14px;
 }
 
+.price-filter {
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    position: relative;
+}
+
 .price-title {
     font-size: 17px;
     text-transform: uppercase;
     color: #D7D7D7;
     position: absolute;
-    top: 13%;
-    left: 80%;
+    top: -50%;
+    left: 25%;
 }
 
 #price-slider {
@@ -315,6 +322,9 @@ a.nav-link:hover:after {
     width: 200px;
     background-color: #D1D1D1;
     outline: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #price-slider::-moz-range-thumb {
@@ -328,26 +338,22 @@ a.nav-link:hover:after {
     background-color: #fff;
     border: 1px solid #ffa100;
     border-radius: 50%;
-    z-index: 3;
 }
 
-#select-value {
+.slider-value {
     font-size: 16px;
+    font-weight: bold;
     color: #ffa100;
-    /* position: absolute; */
-    /* position: fixed; */
-    position: relative;
-    /* top: -40px; */
-    /* width: 100px;
-    height: 100px; */
-    top: 25%;
-    left: -80%;
-
+    position: absolute;
+    left: 0px;
+    transform: translateY(-30%);
 }
 
-.price-filter {
-    width: 200px;
-    display: flex;
-    align-items: center;
-    /* position: relative; */
+.progress-bar {
+    width: 0px;
+    height: 6px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffa100;
 }
