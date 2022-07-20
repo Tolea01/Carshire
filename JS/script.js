@@ -31,44 +31,48 @@ let suv = document.querySelector(".suv");
 let pickup = document.querySelector(".pickup");
 let coupe = document.querySelector(".coupe");
 let convertible = document.querySelector(".convertible");
-let vehicleText = document.querySelector(".vehicle-text");
 
 suv.addEventListener('click', () => {
     convertible.classList.remove('convertible-active');
-    coupe.classList.remove('coupe-active');
     pickup.classList.remove('pickup-active');
     suv.classList.add('suv-active');
 })
 
 pickup.addEventListener('click', () => {
-    convertible.classList.remove('convertible-active');
-    coupe.classList.remove('coupe-active');
     suv.classList.remove('suv-active');
+    coupe.classList.remove('coupe-active');
     pickup.classList.add('pickup-active');
 })
 
 coupe.addEventListener('click', () => {
     convertible.classList.remove('convertible-active');
-    suv.classList.remove('suv-active');
     pickup.classList.remove('pickup-active');
     coupe.classList.add('coupe-active');
 })
 
 convertible.addEventListener('click', () => {
-    suv.classList.remove('suv-active');
     coupe.classList.remove('coupe-active');
-    pickup.classList.remove('pickup-active');
+    suv.classList.remove('suv-active');
     convertible.classList.add('convertible-active');
 })
 
-// function click(clickElem, delElem1, delElem1class, delElem2,
-//     delElem2class, delElem3, delElem3class, addElem4, addElemclass) {
-//     clickElem.addEventListener('click', () => {
-//         delElem1.classList.remove('delElem1class');
-//         delElem2.classList.remove('delElem2class');
-//         delElem3.classList.remove('delElem3class');
-//         addElem4.classList.add('addElemclass');
-//     })
-// }
-// click(suv, convertible, convertible-active, coupe, coupe-active,
-//     pickup, pickup-active, suv, suv-active);
+
+
+let selected = document.querySelector(".selected");
+let optionsContainer = document.querySelector(".options-container");
+let optionsList = document.querySelectorAll(".option");
+
+selected.addEventListener("click", () => {
+    selected.classList.toggle("selected-active");
+    selected.classList.toggle("selected-arrow");
+    optionsContainer.classList.toggle("options-container-active");
+  });
+  
+  optionsList.forEach(o => {
+    o.addEventListener("click", () => {
+      selected.innerHTML = o.querySelector("label").innerHTML;
+      optionsContainer.classList.remove("options-container-active");
+      selected.classList.remove("selected-active");
+      selected.classList.remove("selected-arrow");
+    });
+  });

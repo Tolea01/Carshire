@@ -269,10 +269,6 @@ a.nav-link:hover:after {
     font-size: 17px;
 }
 
-.select-row1 {
-    height: 78px;
-}
-
 .suv {
     background: url("/img/car-select-form/suv-grey.png") no-repeat top center;
 }
@@ -376,4 +372,88 @@ a.nav-link:hover:after {
     top: 50%;
     transform: translateY(-50%);
     background-color: #ffa100;
+}
+
+.select-box {
+    position: relative;
+    left: -10px;
+    margin-right: 10px;
+}
+
+.options-container {
+    opacity: 0;
+    width: 150px;
+    position: absolute;
+    background: #FFFFFF;
+    color: #ffa100;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.2s;
+    margin-top: -10px;
+    border: 1px solid #ffa100;
+    pointer-events: none;
+}
+
+.option {
+    height: 38px;
+    padding: 8px;
+    border-top: 1px solid #bababa;
+}
+
+.option:hover {
+    background-color: #e6e0e08e;
+}
+
+input[name="brand"] {
+    display: none;
+}
+
+.selected {
+    width: 150px;
+    height: 40px;
+    background: #FFFFFF;
+    color: #bababa;
+    border: 2px solid #bababa;
+    position: relative;
+    top: -10px;
+    padding-left: 11px;
+}
+
+.selected::after {
+    content: '';
+    background: url("/SVG_icon/arrow-down.svg");
+    position: absolute;
+    right: 7px;
+    width: 13px;
+    height: 13px;
+}
+
+.selected-active {
+    border: 2px solid #ffa100;
+    color: #ffa100;
+}
+
+.selected-arrow::after {
+    content: '';
+    background: url("/SVG_icon/arrow-down-active.svg");
+}
+
+.options-container-active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.option,
+.selected,
+.option label {
+    cursor: pointer;
+}
+
+.select-placeholder {
+    position: relative;
+    top: -9px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #bababa;
+    z-index: -1;
 }
