@@ -304,6 +304,7 @@ a.nav-link:hover:after {
 .vehicle {
     height: 68px;
     margin-right: 40px;
+    cursor: pointer;
 }
 
 .vehicle-text {
@@ -325,7 +326,7 @@ a.nav-link:hover:after {
 .price-title {
     font-size: 17px;
     text-transform: uppercase;
-    color: #D7D7D7;
+    color: #bababa;
     position: absolute;
     top: -50%;
     left: 25%;
@@ -380,7 +381,9 @@ a.nav-link:hover:after {
     margin-right: 10px;
 }
 
-.options-container {
+.options-brands-container,
+.options-models-container,
+.options-years-container {
     opacity: 0;
     width: 150px;
     position: absolute;
@@ -394,21 +397,29 @@ a.nav-link:hover:after {
     pointer-events: none;
 }
 
-.option {
+.option-list-brands,
+.option-list-models,
+.option-list-years {
     height: 38px;
     padding: 8px;
     border-top: 1px solid #bababa;
 }
 
-.option:hover {
+.option-list-brands:hover,
+.option-list-models:hover,
+.option-list-years:hover {
     background-color: #e6e0e08e;
 }
 
-input[name="brand"] {
+input[name="brand"],
+input[name="model"],
+input[name="year"] {
     display: none;
 }
 
-.selected {
+.select-brand,
+.select-model,
+.select-year {
     width: 150px;
     height: 40px;
     background: #FFFFFF;
@@ -419,7 +430,9 @@ input[name="brand"] {
     padding-left: 11px;
 }
 
-.selected::after {
+.select-brand::after,
+.select-model::after,
+.select-year::after {
     content: '';
     background: url("/SVG_icon/arrow-down.svg");
     position: absolute;
@@ -443,9 +456,13 @@ input[name="brand"] {
     pointer-events: auto;
 }
 
-.option,
-.selected,
-.option label {
+.option-list-brands,
+.option-list-models,
+.option-list-years,
+.select-brand,
+.select-model,
+.select-year,
+ label {
     cursor: pointer;
 }
 
@@ -456,4 +473,23 @@ input[name="brand"] {
     font-weight: 300;
     color: #bababa;
     z-index: -1;
+}
+
+.search-button {
+    width: 189px;
+    height: 40px;
+    position: relative;
+    top: -10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ffa100;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #fff;
+    color: #ffa100;
+    border: 1px solid #ffa100;
 }

@@ -58,21 +58,75 @@ convertible.addEventListener('click', () => {
 
 
 
-let selected = document.querySelector(".selected");
-let optionsContainer = document.querySelector(".options-container");
-let optionsList = document.querySelectorAll(".option");
+let selectBrand = document.querySelector(".select-brand");
+let selectModel = document.querySelector(".select-model");
+let selectYear = document.querySelector(".select-year");
+let optionsBrands = document.querySelector(".options-brands-container");
+let optionsModels = document.querySelector(".options-models-container");
+let optionsYears = document.querySelector(".options-years-container");
+let optionsListBrands = document.querySelectorAll(".option-list-brands");
+let optionsListModels = document.querySelectorAll(".option-list-models");
+let optionsListYears = document.querySelectorAll(".option-list-years");
 
-selected.addEventListener("click", () => {
-    selected.classList.toggle("selected-active");
-    selected.classList.toggle("selected-arrow");
-    optionsContainer.classList.toggle("options-container-active");
-  });
-  
-  optionsList.forEach(o => {
+selectBrand.addEventListener("click", () => {
+    selectYear.classList.remove("selected-active");
+    selectYear.classList.remove("selected-arrow");
+    optionsYears.classList.remove("options-container-active");
+    selectModel.classList.remove("selected-active");
+    selectModel.classList.remove("selected-arrow");
+    optionsModels.classList.remove("options-container-active");
+    selectBrand.classList.toggle("selected-active");
+    selectBrand.classList.toggle("selected-arrow");
+    optionsBrands.classList.toggle("options-container-active");
+});
+
+selectModel.addEventListener("click", () => {
+    selectBrand.classList.remove("selected-active");
+    selectBrand.classList.remove("selected-arrow");
+    optionsBrands.classList.remove("options-container-active");
+    selectYear.classList.remove("selected-active");
+    selectYear.classList.remove("selected-arrow");
+    optionsYears.classList.remove("options-container-active");
+    selectModel.classList.toggle("selected-active");
+    selectModel.classList.toggle("selected-arrow");
+    optionsModels.classList.toggle("options-container-active");
+});
+
+selectYear.addEventListener("click", () => {
+    selectBrand.classList.remove("selected-active");
+    selectBrand.classList.remove("selected-arrow");
+    optionsBrands.classList.remove("options-container-active");
+    selectModel.classList.remove("selected-active");
+    selectModel.classList.remove("selected-arrow");
+    optionsModels.classList.remove("options-container-active");
+    selectYear.classList.toggle("selected-active");
+    selectYear.classList.toggle("selected-arrow");
+    optionsYears.classList.toggle("options-container-active");
+});
+
+optionsListBrands.forEach(o => {
     o.addEventListener("click", () => {
-      selected.innerHTML = o.querySelector("label").innerHTML;
-      optionsContainer.classList.remove("options-container-active");
-      selected.classList.remove("selected-active");
-      selected.classList.remove("selected-arrow");
+      selectBrand.innerHTML = o.querySelector("label").innerHTML;
+      optionsBrands.classList.remove("options-container-active");
+      selectBrand.classList.remove("selected-active");
+      selectBrand.classList.remove("selected-arrow");
+    });
+  });
+
+  optionsListModels.forEach(o => {
+    o.addEventListener("click", () => {
+      selectModel.innerHTML = o.querySelector("label").innerHTML;
+      optionsModels.classList.remove("options-container-active");
+      selectModel.classList.remove("selected-active");
+      selectModel.classList.remove("selected-arrow");
+    });
+  });
+
+  optionsListYears.forEach(o => {
+    o.addEventListener("click", () => {
+      selectYear.innerHTML = o.querySelector("label").innerHTML;
+      optionsYears.classList.remove("options-container-active");
+      selectYear.classList.remove("selected-active");
+      selectYear.classList.remove("selected-arrow");
     });
   });
