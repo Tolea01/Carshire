@@ -112,6 +112,43 @@
         background-color: white;
         z-index: 2;
     }
+
+    .header-img__car {
+        height: 700px;
+    }
+
+    .header-select__container {
+        height: 500px;
+        width: 100%;
+        transform: translateY(-60%);
+    }
+
+    .car-select {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 25px;
+    }
+
+    .select__title {
+        width: 100%;
+        margin-bottom: 35px;
+        transform: translateX(-5%);
+    }
+
+    .price-filter {
+        margin-top: 60px;
+        width: 100%;
+        transform:translateX(-5%);
+        padding: 0 25px;        
+    }
+
+    #price-slider {
+       width: 100%;
+    }
+
+    .price-title {
+        left: 50%;
+    }
 }
 
 @media(max-width: 480px) {
