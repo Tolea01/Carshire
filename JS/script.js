@@ -24,6 +24,11 @@ range.oninput = function () {
     rangeNum.style.left = this.value / 5.53 + "px";
     progressBar.style.width = this.value / 5.53 + "px";
     rangeNum.innerHTML = this.value + "$";
+
+    if (window.innerWidth < 992) {
+        rangeNum.style.left = this.value / 1.122 + "px";
+        progressBar.style.width = this.value / 1.154 + "px";
+    }
 }
 
 
