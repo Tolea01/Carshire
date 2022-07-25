@@ -17,18 +17,26 @@ window.onscroll = () => {
 }
 
 
-let range = document.querySelector("#price-slider");
-let rangeNum = document.querySelector(".slider-value");
-let progressBar = document.querySelector(".progress-bar");
-range.oninput = function () {
-    rangeNum.style.left = this.value / 5.53 + "px";
-    progressBar.style.width = this.value / 5.53 + "px";
-    rangeNum.innerHTML = this.value + "$";
-
-    if (window.innerWidth < 992) {
-        rangeNum.style.left = this.value / 1.122 + "px";
-        progressBar.style.width = this.value / 1.154 + "px";
-    }
+const rangeSlider = document.querySelector('#range-slider');
+if(rangeSlider) {
+    noUiSlider.create(rangeSlider, {
+        start: [100, 1000],
+        connect: true,
+        step: 10,
+        tooltips: true,
+        format: {
+            to: function(value) {
+                return parseInt(value) + "$";
+            },
+            from: function (value) {
+                return parseInt(value);
+            }
+        },
+        range: {
+            'min': 100,
+            'max': 1000
+        },
+    });
 }
 
 

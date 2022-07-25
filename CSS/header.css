@@ -332,47 +332,41 @@ a.nav-link:hover:after {
     left: 25%;
 }
 
-#price-slider {
-    -webkit-appearance: none;
-    -moz-appearance: none;
+.slider {
+    margin-top: 20px;
+}
+
+.noUi-connect {
+    background: #ffa100;
+}
+
+.noUi-target {
+    background: #bababa;
     height: 6px;
-    width: 200px;
-    background-color: #D1D1D1;
-    outline: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    border: none;
+    border-radius: 0;
 }
 
-#price-slider::-moz-range-thumb {
-    -moz-appearance: none;
+.noUi-handle::before,
+.noUi-handle::after {
+    display: none;
 }
 
-#price-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 16px;
-    height: 16px;
-    background-color: #fff;
-    border: 1px solid #ffa100;
+.noUi-horizontal .noUi-handle {
+    width: 17px;
+    height: 17px;
     border-radius: 50%;
+    border: 1px solid #ffa100;
 }
 
-.slider-value {
+.noUi-tooltip {
+    background-color: transparent;
+    border: none;
+    color: #ffa100;
     font-size: 16px;
     font-weight: bold;
-    color: #ffa100;
     position: absolute;
-    left: 0px;
-    transform: translateY(-30%);
-}
-
-.progress-bar {
-    width: 0px;
-    height: 6px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #ffa100;
+    top: -30px;
 }
 
 .select-box {
