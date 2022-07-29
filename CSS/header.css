@@ -369,6 +369,11 @@ a.nav-link:hover:after {
     top: -30px;
 }
 
+.category {
+    /* height: 100px; */
+    height: 50%;
+}
+
 .select-box {
     position: relative;
     left: -10px;
@@ -420,8 +425,9 @@ input[name="year"] {
     color: #bababa;
     border: 2px solid #bababa;
     position: relative;
-    top: -10px;
+    /* top: -10px; */
     padding-left: 11px;
+    top: 50%;
 }
 
 .select-brand::after,
